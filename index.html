@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Cars Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="https://scalebranding.com/wp-content/uploads/2021/07/M-or-MY-Arrow.jpg" alt="Logo"> 
+                <h1>Motiv.</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Assets</a></li>
+                    <li><a href="#">Booking</a></li>
+                    <li class="active"><a href="#">Sell Cars</a></li>
+                    <li><a href="#">Buy Cars</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Messages</a></li>
+                </ul>
+            </nav>
+            <div class="settings">
+                <a href="#">Settings</a>
+                <a href="#">Log out</a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <div class="search">
+                    <input type="text" placeholder="Search or type">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="profile">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVuWCXoxArGbbZJlVPCS37O_3j3tlPSYWG0Q&s" alt="Profile Picture">
+                </div>
+            </header>
+            <section class="sell-cars-section">
+                <div class="dashboard">
+                    <div class="card">
+                        <h2>Users</h2>
+                        <p>Total Users: 1000</p>
+                    </div>
+                    <div class="card">
+                        <h2>Products</h2>
+                        <p>Total Products: 10000</p>
+                    </div>
+                    <div class="card">
+                        <h2>Orders</h2>
+                        <p>Total Orders: 5000</p>
+                    </div>
+                </div>
+                <h2>Sell Cars</h2>
+                <div class="car-details">
+                    <div class="car-info">
+                        <h3>2022 Mercedes Benz</h3>
+                        <img src="https://www.carandbike.com/_next/image?url=https%3A%2F%2Fimages.carandbike.com%2Fcar-images%2Fcolors%2Fhonda%2Famaze%2Fhonda-amaze-radiant-red.png%3Fv%3D1629271820&w=640&q=75" alt="2022 Mercedes Benz">
+                    </div>
+                    <div class="tracking-history">
+                        <h3>Tracking History</h3>
+                        <canvas id="chart"></canvas>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

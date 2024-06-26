@@ -1,0 +1,186 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+}
+
+
+.sidebar {
+    background-color: #f9f9f9; 
+    color: #333; 
+    width: 250px;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .logo img {
+    width: 50px; 
+    height: auto; 
+    display: block;
+    margin: 0 auto 10px; 
+    }
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    color: #333; 
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e0e0e0; 
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #d1e8f7; 
+}
+
+.sidebar .settings {
+    position: absolute;
+    bottom: 20px;
+}
+
+.sidebar .settings a {
+    color: #666; 
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sidebar .settings a:hover {
+    color: #333; 
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header .search {
+    flex: 1;
+    margin-right: 20px;
+    position: relative;
+}
+
+.header .search input[type="text"] {
+    width: 95%;
+    padding: 10px 20px 10px 40px; 
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+    transition: border 0.3s;
+}
+
+.header .search input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.header .search .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #aaa; 
+}
+
+
+.header .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.sell-cars-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    background-color: #d1e8f7; 
+    box-shadow: 0 0 12px rgba(0, 0, 255, 0.2); 
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.car-details {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px; 
+}
+
+.car-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.car-info img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.tracking-history {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.tracking-history h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#chart {
+    border-radius: 20px; 
+}
